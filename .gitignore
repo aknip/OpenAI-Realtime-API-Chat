@@ -1,0 +1,15 @@
+__pycache__/
+*.egg-info/
+.*.swp
+dist
+*.pickle
+*.log
+venv
+.idea
+.nicegui/
+*.sqlite*
+.lycheecache
+.DS_Store
+.venv/
+config.pickle
+.env
