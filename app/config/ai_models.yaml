@@ -1,0 +1,33 @@
+# AI model configurations for different tasks
+models:
+  default:
+    provider: groq
+    name: llama-3.3-70b-versatile
+    temperature: 0.1
+    max_retries: 2
+  
+  # Task-specific configurations (override default settings)
+  sql_generation:
+    temperature: 0.1  # Lower temperature for more precise SQL generation
+  
+  image_prompt:
+    temperature: 0.25  # Higher temperature for creative prompts
+  
+  linkedin_post:
+    temperature: 0.5  # Higher temperature for creative writing
+  
+  python_code:
+    temperature: 0.1  # Lower temperature for code generation
+    
+  creative_content:
+    temperature: 0.5  # Higher temperature for creative scene descriptions
+
+  # Image generation models
+  image_generation:
+    provider: together
+    name: black-forest-labs/FLUX.1.1-pro
+    width: 1024
+    height: 768
+    steps: 4
+    n: 1
+    response_format: b64_json 

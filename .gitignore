@@ -1,15 +1,20 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
 __pycache__/
-*.egg-info/
-.*.swp
-dist
-*.pickle
-*.log
-venv
-.idea
-.nicegui/
-*.sqlite*
-.lycheecache
+.pytest_cache/
+
+# Development tool folders
+.idea/
+.vscode/
+
+# macOS system files
 .DS_Store
-.venv/
-config.pickle
+
+# Secrets
 .env
+
+# env   
+.venv/
+
+# Others
+scratchpad/
